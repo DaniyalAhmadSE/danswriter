@@ -1,0 +1,22 @@
+{
+    "preferences": {
+        "engine": "string | Set your chatbot engine (tgpt or palm)",
+        "min_words_total": "int | Set approximate minimum total words you want in the blog",
+        "min_words_per_subheading": " int | Set approximate minimum total words you want per subheading in the blog",
+        "writer_personality": "string | Set the personality of the writer (for tone and style configuration)",
+        "content_instructions_base": "string | Set the base instructions for the content. It must include {writer_personality}, {topic}, {min_words_total}, and {min_words_per_subheading}, so that the app can interpolate them in this string.",
+        "content_labels_instructions_base": "string | Set the base instructions for the labels/tags/categories to be applied to the post. It must include {topic}"
+    },
+    "blogger_settings": {
+        "blog_id": "string | Set the blog id. Visit blogger.com to obtain from the url i.e. https://www.blogger.com/blog/posts/<HERE IS YOUR BLOG ID>?bpli=1&pli=1",
+        "auth_settings": {
+            "port": "int | Set the port number the same as you have set in your Google Cloud Console",
+            "token": "string | Do not edit the token, it will be configured automatically",
+            "client_secrets_filepath": "string | Set the path to your client secrets file"
+        }
+    },
+    "api_keys": {
+        "palm": "string | Set the palm api key",
+        "unsplash": "string | Set the unsplash api key"
+    }
+}

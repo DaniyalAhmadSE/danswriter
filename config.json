@@ -1,0 +1,22 @@
+{
+    "preferences": {
+        "engine": "tgpt",
+        "min_words_total": 2000,
+        "min_words_per_subheading": 200,
+        "writer_personality": "a blogger",
+        "content_instructions_base": "Hi, Follow my instructions. You are a {writer_personality}.\nKeeping that in mind write an HTML-formatted blog post on the topic \"{topic}\".\nTHINGS YOU MUST REMEMBER:\n\tUse correct grammar.\n\tGive the blog a catchy title.\n\tDo not use a boring title.\n\tThe title Must not contain the words 'Unleashing', 'Ultimate', 'Power', or 'Guide'.\n\tDo not use boring subheadings like Introduction and Conclusion.\nThe post MUST be formatted as an HTML document with proper search-engine optimization applied.\n\tIt MUST have at least {min_words_total} words.\n\tAnd each subheading MUST have at least {min_words_per_subheading} words.\n\tREMEMBER MY INSTRUCTIONS AT ALL COST.",
+        "content_labels_instructions_base": "Write a list of 10 single word labels/categories/tags for a blogger post on the topic \"{topic}\""
+    },
+    "blogger_settings": {
+        "blog_id": "string | Set the blog id. Visit blogger.com to obtain from the url i.e. https://www.blogger.com/blog/posts/<HERE IS YOUR BLOG ID>?bpli=1&pli=1",
+        "auth_settings": {
+            "port": "int | Set the port number the same as you have set in your Google Cloud Console",
+            "token": "string | Do not edit the token, it will be configured automatically",
+            "client_secrets_filepath": "string | Set the path to your client secrets file"
+        }
+    },
+    "api_keys": {
+        "palm": "string | Set the palm api key",
+        "unsplash": "string | Set the unsplash api key"
+    }
+}
