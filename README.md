@@ -1,8 +1,18 @@
 # danswriter
-danswriter is an app to create blogposts leveraging GPT and PaLM, and posting them on your Blogspot.
+danswriter is an app to create posts for your blogspot by leveraging GPT and PaLM. None of the requirements need to be paid for as of now (Oct 2nd, 2023).
+
+## Features
+* Write posts for your blogspot (with labels/tags) using:
+  * GPT-3.5 via [tgpt](https://github.com/DaniyalAhmadSE/danswriter#about-tgpt)
+  * PaLM 2 via the official API
+* Insert images from Unsplash using the official API
+* Upload your post on Blogger using the official API
+  * Built-in bearer token refresh (using OAuth flow)
 
 ## Pre-requisites
-danswriter requires **[tgpt](https://github.com/aandrew-me/tgpt)** by [aandrew-me](https://github.com/aandrew-me), which is an awesome cross-platform ChatGPT CLI client that does not require Openai API keys. Follow the [official installation instructions](https://github.com/aandrew-me/tgpt#installation-) for tgpt.
+1. Either the official API keys for PaLM 2 OR [tgpt](https://github.com/DaniyalAhmadSE/danswriter#about-tgpt) installed on your machine. 
+2. Unsplash API key (If you do not want to get the API key and are fine without having pictures in your post, then you can comment out the relevant code.)
+3. The official Blogger API key.
 
 ## Installation
 To install this project, follow these steps:
@@ -35,12 +45,18 @@ This project is licensed under the **[MIT](https://github.com/DaniyalAhmadSE/dan
 For questions or suggestions (especially regarding prompts), contact me at daniyalahmad.se@gmail.com.
 
 ### Additional information
+
 * **Roadmap:**
   * Improve the prompt.
   * Integrate an improved PaLM model.
   * Allow integration of GPT using the official Openai API keys.
   * Integrate more blogging sites.
+
 * **Contributors:**
   * Just [me](https://github.com/DaniyalAhmadSE) for now :)
+
 * **Official Blogspot:**
   * Read the official blogs written by danswriter at [danswriter.blogspot.com](https://danswriter.blogspot.com)
+
+* #### About tgpt
+  * [tgpt](https://github.com/aandrew-me/tgpt) by [aandrew-me](https://github.com/aandrew-me) is an awesome cross-platform ChatGPT CLI client that does not require Openai API keys. Follow the [official installation instructions](https://github.com/aandrew-me/tgpt#installation-) for tgpt.
